@@ -1,9 +1,26 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.titulo{
 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+
+
+}
+.subtitutlo{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+
+
+
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -57,4 +74,47 @@ footer {
     padding: 15px;
     background-color: #333;
     color: white;
+}
+
+/* Media Queries para Tablets */
+@media (max-width: 768px) {
+    .catalogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 80%; /* Ajuste de ancho para tablets */
+    }
+
+    .producto img {
+        width: 100%; /* Imagen ajustada para el nuevo ancho */
+        height: auto;
+    }
+}
+
+/* Media Queries para Móviles */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .producto {
+        width: 90%; /* Ancho más pequeño para móviles */
+    }
+
+    .producto img {
+        width: 100%; /* Imagen ajustada al 100% del contenedor */
+        height: auto;
+    }
+
+    .producto h2 {
+        font-size: 18px; /* Texto más pequeño para móviles */
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
